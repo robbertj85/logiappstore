@@ -9,9 +9,12 @@ import {
 import Link from "next/link";
 
 export default function ConsumerDashboard() {
-  const { user, isLoggedIn } = useAuth();
+  const { user, isLoggedIn, isLoading } = useAuth();
   const router = useRouter();
 
+  if (isLoading) {
+    return <div className="bg-background min-h-screen flex items-center justify-center"><div className="animate-pulse text-muted-foreground">Laden...</div></div>;
+  }
   if (!isLoggedIn || !user) {
     if (typeof window !== "undefined") router.push("/login");
     return null;

@@ -1,8 +1,18 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { Listing, Organization } from "@logiappstore/shared";
 import { BadgeDisplay } from "./badge-display";
 import { StarRating } from "./star-rating";
 import { formatPrice } from "@/lib/utils";
+
+function hasRealImage(url: string): boolean {
+  // Check if the file is one of our captured screenshots
+  try {
+    return url.startsWith("/uploads/listings/") && !url.includes("feature");
+  } catch {
+    return false;
+  }
+}
 
 interface ListingCardProps {
   listing: Listing;
@@ -10,18 +20,32 @@ interface ListingCardProps {
 }
 
 export function ListingCard({ listing, organization }: ListingCardProps) {
+  const firstImage = listing.media.find((m) => m.type === "image");
+  const imageUrl = firstImage?.url;
+  const showImage = imageUrl && hasRealImage(imageUrl);
+
   return (
     <Link href={`/products/${listing.slug}`} className="group">
       <div className="card overflow-hidden h-full flex flex-col">
         {/* Feature graphic */}
         <div className="aspect-video bg-gradient-to-br from-primary/5 to-highlight/5 relative overflow-hidden">
-          <div className="absolute inset-0 flex items-center justify-center text-primary/20">
-            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
-              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-              <line x1="8" y1="21" x2="16" y2="21"/>
-              <line x1="12" y1="17" x2="12" y2="21"/>
-            </svg>
-          </div>
+          {showImage ? (
+            <Image
+              src={imageUrl}
+              alt={firstImage?.alt ?? listing.title}
+              fill
+              className="object-cover group-hover:scale-105 transition-transform duration-300"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            />
+          ) : (
+            <div className="absolute inset-0 flex items-center justify-center text-primary/20">
+              <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                <line x1="8" y1="21" x2="16" y2="21"/>
+                <line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+            </div>
+          )}
         </div>
 
         <div className="p-4 flex flex-col flex-1">

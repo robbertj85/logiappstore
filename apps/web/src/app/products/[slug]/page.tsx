@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import Image from "next/image";
 import Link from "next/link";
 import {
   ArrowLeft, ExternalLink, Globe, Star, ShieldCheck,
@@ -95,9 +96,15 @@ export default async function ProductDetailPage({ params }: Props) {
                   .map((media) => (
                     <div
                       key={media.id}
-                      className="aspect-video bg-gradient-to-br from-primary/5 to-highlight/5 rounded-lg border border-border flex items-center justify-center"
+                      className="aspect-video bg-gradient-to-br from-primary/5 to-highlight/5 rounded-lg border border-border relative overflow-hidden"
                     >
-                      <Monitor className="h-8 w-8 text-primary/20" />
+                      <Image
+                        src={media.url}
+                        alt={media.alt ?? listing.title}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 640px) 100vw, 50vw"
+                      />
                     </div>
                   ))}
               </div>

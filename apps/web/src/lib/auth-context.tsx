@@ -34,6 +34,7 @@ interface AuthContextType {
   login: (role: AuthRole) => void;
   logout: () => void;
   isLoggedIn: boolean;
+  isLoading: boolean;
 }
 
 const AuthContext = createContext<AuthContextType>({
@@ -41,10 +42,12 @@ const AuthContext = createContext<AuthContextType>({
   login: () => {},
   logout: () => {},
   isLoggedIn: false,
+  isLoading: true,
 });
 
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<FakeUser | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const stored = localStorage.getItem("logiappstore_user");
@@ -55,6 +58,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         localStorage.removeItem("logiappstore_user");
       }
     }
+    setIsLoading(false);
   }, []);
 
   const login = (role: AuthRole) => {
@@ -69,7 +73,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   };
 
   return (
-    <AuthContext.Provider value={{ user, login, logout, isLoggedIn: !!user }}>
+    <AuthContext.Provider value={{ user, login, logout, isLoggedIn: !!user, isLoading }}>
       {children}
     </AuthContext.Provider>
   );

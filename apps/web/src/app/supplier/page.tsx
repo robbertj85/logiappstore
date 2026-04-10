@@ -10,9 +10,12 @@ import Link from "next/link";
 import { getSupplierListings } from "@/lib/data";
 
 export default function SupplierDashboard() {
-  const { user, isLoggedIn } = useAuth();
+  const { user, isLoggedIn, isLoading } = useAuth();
   const router = useRouter();
 
+  if (isLoading) {
+    return <div className="bg-background min-h-screen flex items-center justify-center"><div className="animate-pulse text-muted-foreground">Laden...</div></div>;
+  }
   if (!isLoggedIn || !user) {
     if (typeof window !== "undefined") router.push("/login");
     return null;
@@ -34,10 +37,10 @@ export default function SupplierDashboard() {
               {user.organization} — Leverancier Dashboard
             </p>
           </div>
-          <button className="btn-primary flex items-center gap-2 text-sm">
+          <Link href="/supplier/nieuw-product" className="btn-primary flex items-center gap-2 text-sm">
             <Plus className="h-4 w-4" />
             Nieuw product
-          </button>
+          </Link>
         </div>
 
         {/* Stats */}
@@ -92,10 +95,10 @@ export default function SupplierDashboard() {
                   <p className="text-sm text-muted-foreground">
                     U heeft nog geen producten. Maak uw eerste listing aan.
                   </p>
-                  <button className="btn-primary mt-4 inline-flex items-center gap-2 text-sm">
+                  <Link href="/supplier/nieuw-product" className="btn-primary mt-4 inline-flex items-center gap-2 text-sm">
                     <Plus className="h-4 w-4" />
                     Nieuw product
-                  </button>
+                  </Link>
                 </div>
               )}
             </div>
