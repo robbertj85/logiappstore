@@ -29,6 +29,7 @@ export interface Organization {
   slug: string;
   type: OrganizationType;
   kvkNumber?: string;
+  niwoNumber?: string;
   description?: string;
   logo?: string;
   website?: string;
@@ -40,6 +41,7 @@ export interface Organization {
   kvkVerified: boolean;
   verificationTier: VerificationTier;
   trustedPartner: boolean;
+  vehicles?: Vehicle[];
 }
 
 // ─── LISTINGS ───────────────────────────────────────────────────
@@ -129,6 +131,20 @@ export interface TerugsluitBudget {
   totalAllocated: number;
   totalSpent: number;
   remaining: number;
+}
+
+// ─── VEHICLES (RDW) ────────────────────────────────────────────
+
+export interface Vehicle {
+  kenteken: string;
+  merk: string;
+  handelsbenaming: string;
+  voertuigsoort: string;
+  eerste_kleur: string;
+  toegestane_maximum_massa_voertuig: number;
+  datum_eerste_toelating: string;
+  vervaldatum_apk: string;
+  wam_verzekerd: string;
 }
 
 // ─── BADGES ─────────────────────────────────────────────────────

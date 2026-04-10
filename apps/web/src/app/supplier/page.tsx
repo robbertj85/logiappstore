@@ -132,20 +132,20 @@ export default function SupplierDashboard() {
             <div className="card p-5">
               <h3 className="text-sm font-bold text-primary mb-3">Snelle acties</h3>
               <div className="space-y-2">
-                <button className="w-full flex items-center gap-3 text-left text-sm text-primary hover:text-highlight p-2 rounded-md hover:bg-background transition-colors">
+                <Link href="/supplier/analytics" className="w-full flex items-center gap-3 text-left text-sm text-primary hover:text-highlight p-2 rounded-md hover:bg-background transition-colors">
                   <BarChart3 className="h-4 w-4 text-muted-foreground" />
                   Bekijk analytics
-                </button>
-                <button className="w-full flex items-center gap-3 text-left text-sm text-primary hover:text-highlight p-2 rounded-md hover:bg-background transition-colors">
+                </Link>
+                <Link href="/supplier/reviews" className="w-full flex items-center gap-3 text-left text-sm text-primary hover:text-highlight p-2 rounded-md hover:bg-background transition-colors">
                   <MessageSquare className="h-4 w-4 text-muted-foreground" />
                   Reageer op reviews
-                </button>
+                </Link>
                 <Link
-                  href="/products/transtics-tms-pro"
+                  href="/supplier/listings"
                   className="w-full flex items-center gap-3 text-left text-sm text-primary hover:text-highlight p-2 rounded-md hover:bg-background transition-colors"
                 >
                   <Eye className="h-4 w-4 text-muted-foreground" />
-                  Bekijk uw listing
+                  Bekijk uw listings
                 </Link>
               </div>
             </div>

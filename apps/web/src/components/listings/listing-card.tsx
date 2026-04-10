@@ -6,12 +6,9 @@ import { StarRating } from "./star-rating";
 import { formatPrice } from "@/lib/utils";
 
 function hasRealImage(url: string): boolean {
-  // Check if the file is one of our captured screenshots
-  try {
-    return url.startsWith("/uploads/listings/") && !url.includes("feature");
-  } catch {
-    return false;
-  }
+  // Only return true for screenshots we actually captured from supplier websites
+  const knownPrefixes = ["simacan", "ptv", "addsecure", "gps-buddy", "solid-wms", "centric", "visma-loginex"];
+  return url.startsWith("/uploads/listings/") && knownPrefixes.some((p) => url.includes(p));
 }
 
 interface ListingCardProps {

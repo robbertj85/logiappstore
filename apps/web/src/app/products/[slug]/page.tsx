@@ -93,20 +93,30 @@ export default async function ProductDetailPage({ params }: Props) {
               <div className="grid grid-cols-2 gap-3">
                 {listing.media
                   .filter((m) => m.type === "image")
-                  .map((media) => (
-                    <div
-                      key={media.id}
-                      className="aspect-video bg-gradient-to-br from-primary/5 to-highlight/5 rounded-lg border border-border relative overflow-hidden"
-                    >
-                      <Image
-                        src={media.url}
-                        alt={media.alt ?? listing.title}
-                        fill
-                        className="object-cover"
-                        sizes="(max-width: 640px) 100vw, 50vw"
-                      />
-                    </div>
-                  ))}
+                  .map((media) => {
+                    const knownPrefixes = ["simacan", "ptv", "addsecure", "gps-buddy", "solid-wms", "centric", "visma-loginex"];
+                    const hasFile = media.url.startsWith("/uploads/listings/") && knownPrefixes.some((p) => media.url.includes(p));
+                    return (
+                      <div
+                        key={media.id}
+                        className="aspect-video bg-gradient-to-br from-primary/5 to-highlight/5 rounded-lg border border-border relative overflow-hidden"
+                      >
+                        {hasFile ? (
+                          <Image
+                            src={media.url}
+                            alt={media.alt ?? listing.title}
+                            fill
+                            className="object-cover"
+                            sizes="(max-width: 640px) 100vw, 50vw"
+                          />
+                        ) : (
+                          <div className="absolute inset-0 flex items-center justify-center text-primary/20">
+                            <Monitor className="h-8 w-8" />
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })}
               </div>
             </div>
 
