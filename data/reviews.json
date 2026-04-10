@@ -88,5 +88,119 @@
     "title": "CBS module scheelt veel werk",
     "body": "De CBS module is voor ons de reden geweest om over te stappen. Voorheen waren we daar uren mee bezig, nu gaat het automatisch. De kostprijsberekening per rit geeft ons ook veel beter inzicht.",
     "createdAt": "2026-02-28"
+  },
+  {
+    "id": "review-9",
+    "listingId": "listing-simacan-control-tower",
+    "userId": "user-8",
+    "userName": "Robert Kuipers",
+    "userOrganization": "Kuipers Logistics",
+    "rating": 5,
+    "title": "Onmisbaar voor onze operatie",
+    "body": "Simacan Control Tower heeft onze klantenservice getransformeerd. We weten nu precies waar elke zending is en kunnen proactief communiceren bij vertragingen. Het aantal belletjes van klanten is met 40% gedaald.",
+    "createdAt": "2026-03-28"
+  },
+  {
+    "id": "review-10",
+    "listingId": "listing-simacan-control-tower",
+    "userId": "user-9",
+    "userName": "Daan Vermeer",
+    "userOrganization": "Vermeer Transport",
+    "rating": 4,
+    "title": "Goede ETA berekening",
+    "body": "De ETA's kloppen verrassend goed, ook in het buitenland. Enige verbeterpunt is dat de onboarding van nieuwe carriers wat makkelijker zou mogen. Maar het support team is erg behulpzaam.",
+    "supplierReply": "Bedankt Daan! We werken aan een self-service carrier onboarding portal die later dit jaar beschikbaar komt.",
+    "supplierRepliedAt": "2026-03-30",
+    "createdAt": "2026-03-25"
+  },
+  {
+    "id": "review-11",
+    "listingId": "listing-ptv-route-optimiser",
+    "userId": "user-10",
+    "userName": "Frank de Boer",
+    "userOrganization": "De Boer Distributie",
+    "rating": 5,
+    "title": "Besparingen overtreffen verwachtingen",
+    "body": "Na implementatie van PTV Route Optimiser rijden we 12% minder kilometers met dezelfde leveringen. De CO2-rapportage is een bonus die onze klanten erg waarderen. Het systeem is complex maar de training van PTV was uitstekend.",
+    "createdAt": "2026-03-15"
+  },
+  {
+    "id": "review-12",
+    "listingId": "listing-visma-loginex-tms",
+    "userId": "user-3",
+    "userName": "Mohammed El Amrani",
+    "userOrganization": "El Amrani Transport",
+    "rating": 4,
+    "title": "Solide TMS, goede support",
+    "body": "We zijn 3 jaar geleden overgestapt naar Visma Loginex en dat was een goede beslissing. Het systeem is stabiel, de planners zijn er snel mee thuis en de automatische facturatie scheelt ons veel werk. De CBS module werkt foutloos.",
+    "createdAt": "2026-04-02"
+  },
+  {
+    "id": "review-13",
+    "listingId": "listing-visma-loginex-tms",
+    "userId": "user-2",
+    "userName": "Petra Bakker",
+    "userOrganization": "Bakker Logistics",
+    "rating": 5,
+    "title": "Beste TMS dat we hebben gebruikt",
+    "body": "Na drie andere systemen zijn we bij Visma Loginex uitgekomen en hier blijven we. De koppelingen met onze boordcomputers en PTV werken naadloos. De charter module voor onze ingehuurde capaciteit is uniek in de markt.",
+    "createdAt": "2026-03-22"
+  },
+  {
+    "id": "review-14",
+    "listingId": "listing-addsecure-fleet",
+    "userId": "user-4",
+    "userName": "Klaas Mulder",
+    "userOrganization": "Mulder & Zn Vervoer",
+    "rating": 4,
+    "title": "Complete telematica oplossing",
+    "body": "We gebruiken AddSecure voor tracking, temperatuur en dashcams op 30 trucks. Het platform is overzichtelijk en de hardware betrouwbaar. De tolmodule bespaart ons handmatig werk bij het verwerken van buitenlandse tol.",
+    "createdAt": "2026-04-08"
+  },
+  {
+    "id": "review-15",
+    "listingId": "listing-gps-buddy-track",
+    "userId": "user-11",
+    "userName": "Willem de Jong",
+    "userOrganization": "De Jong Koeriers",
+    "rating": 4,
+    "title": "Perfect voor kleine vloot",
+    "body": "Met 5 busjes is GPS Buddy precies wat we nodig hebben. Tracker erin, app openen en je ziet alles. Geen gedoe met contracten of installateurs. De ritregistratie voor de belasting is een mooie bonus.",
+    "createdAt": "2026-04-05"
+  },
+  {
+    "id": "review-16",
+    "listingId": "listing-gps-buddy-track",
+    "userId": "user-12",
+    "userName": "Marco Pietersen",
+    "userOrganization": "Pietersen Transport",
+    "rating": 3,
+    "title": "Goed voor de basis",
+    "body": "Voor de prijs is het prima. Tracking werkt goed, app is overzichtelijk. Maar als je meer wilt zoals temperatuur of tachograaf integratie dan moet je toch naar een groter systeem kijken.",
+    "supplierReply": "Bedankt voor uw feedback Marco. GPS Buddy is inderdaad gericht op eenvoud en betaalbaarheid. Voor uitgebreidere telematica verwijzen wij graag naar onze partners.",
+    "supplierRepliedAt": "2026-04-06",
+    "createdAt": "2026-04-03"
+  },
+  {
+    "id": "review-17",
+    "listingId": "listing-solid-wms",
+    "userId": "user-13",
+    "userName": "Erik van den Berg",
+    "userOrganization": "Van den Berg Warehousing",
+    "rating": 5,
+    "title": "Eindelijk een WMS dat past",
+    "body": "Na jarenlang worstelen met spreadsheets voor ons magazijn heeft Solid WMS orde gebracht. De barcode scanning werkt foutloos en het voorraadoverzicht is real-time. Implementatie duurde maar 3 weken.",
+    "createdAt": "2026-03-20"
+  },
+  {
+    "id": "review-18",
+    "listingId": "listing-centric-transport-suite",
+    "userId": "user-14",
+    "userName": "Gerard Smit",
+    "userOrganization": "Smit Transport Groep",
+    "rating": 4,
+    "title": "Alles onder een dak",
+    "body": "Met 200 trucks hadden we behoefte aan een geintegreerd systeem. Centric Transport Suite dekt alles af: ERP, TMS, HR en BI. De implementatie was een flink project maar het resultaat is dat we nu een systeem hebben in plaats van tien.",
+    "createdAt": "2026-02-10"
   }
 ]
