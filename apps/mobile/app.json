@@ -1,0 +1,26 @@
+{
+  "expo": {
+    "name": "Logistiek Appstore",
+    "slug": "logistiek-appstore",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "scheme": "logiappstore",
+    "splash": {
+      "backgroundColor": "#1B3054"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#1B3054"
+      },
+      "package": "nl.logistiekappstore.app"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "nl.logistiekappstore.app"
+    },
+    "plugins": ["expo-router"]
+  }
+}
