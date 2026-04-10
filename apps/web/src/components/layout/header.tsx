@@ -17,7 +17,7 @@ export function Header() {
   const [userMenuOpen, setUserMenuOpen] = useState(false);
   const { user, isLoggedIn, logout } = useAuth();
 
-  const dashboardHref = user?.role === "SUPPLIER" ? "/supplier" : "/dashboard";
+  const dashboardHref = user?.role === "ADMIN" ? "/admin" : user?.role === "SUPPLIER" ? "/supplier" : "/dashboard";
 
   return (
     <header className="bg-primary text-white sticky top-0 z-50">
@@ -45,6 +45,12 @@ export function Header() {
                 {item.label}
               </Link>
             ))}
+            <Link
+              href="/register"
+              className="text-sm font-semibold bg-accent/20 text-accent hover:bg-accent/30 px-3 py-1.5 rounded-md transition-colors"
+            >
+              Nieuwe leverancier
+            </Link>
           </nav>
 
           {/* Right side */}
@@ -69,7 +75,7 @@ export function Header() {
                   <div className="hidden lg:block text-left">
                     <div className="text-xs font-semibold leading-tight">{user.name}</div>
                     <div className="text-[10px] text-white/50 leading-tight">
-                      {user.role === "SUPPLIER" ? "Leverancier" : "Vervoerder"}
+                      {user.role === "ADMIN" ? "Beheerder" : user.role === "SUPPLIER" ? "Leverancier" : "Vervoerder"}
                     </div>
                   </div>
                   <ChevronDown className="h-3.5 w-3.5 text-white/50" />
@@ -87,7 +93,7 @@ export function Header() {
                         <p className="text-xs text-muted-foreground">{user.email}</p>
                         <p className="text-xs text-muted-foreground">{user.organization}</p>
                         <span className="inline-block mt-1 text-[10px] font-semibold px-2 py-0.5 rounded-full bg-accent/10 text-accent-dark">
-                          {user.role === "SUPPLIER" ? "Leverancier" : "Vervoerder"}
+                          {user.role === "ADMIN" ? "Beheerder" : user.role === "SUPPLIER" ? "Leverancier" : "Vervoerder"}
                         </span>
                       </div>
                       <Link
