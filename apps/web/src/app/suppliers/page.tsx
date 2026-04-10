@@ -22,7 +22,7 @@ export default function SuppliersPage() {
             </p>
           </div>
           <Link
-            href="/register"
+            href="/supplier/onboarding"
             className="hidden sm:inline-flex items-center gap-2 bg-accent hover:bg-accent-dark text-white font-semibold text-sm px-5 py-2.5 rounded-md transition-colors"
           >
             <Plus className="h-4 w-4" />
@@ -96,7 +96,7 @@ export default function SuppliersPage() {
             </p>
           </div>
           <Link
-            href="/register"
+            href="/supplier/onboarding"
             className="bg-accent hover:bg-accent-dark text-white font-semibold px-6 py-3 rounded-md flex items-center gap-2 transition-colors shrink-0"
           >
             Registreer als leverancier
