@@ -45,12 +45,6 @@ export function Header() {
                 {item.label}
               </Link>
             ))}
-            <Link
-              href="/register"
-              className="text-sm font-semibold bg-accent/20 text-accent hover:bg-accent/30 px-3 py-1.5 rounded-md transition-colors"
-            >
-              Nieuwe leverancier
-            </Link>
           </nav>
 
           {/* Right side */}

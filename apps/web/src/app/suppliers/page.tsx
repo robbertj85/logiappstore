@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ShieldCheck, Award, ExternalLink } from "lucide-react";
+import { ShieldCheck, Award, ExternalLink, ArrowRight, Plus } from "lucide-react";
 import { getSuppliers, getSupplierListings } from "@/lib/data";
 import type { Metadata } from "next";
 
@@ -14,11 +14,20 @@ export default function SuppliersPage() {
   return (
     <div className="bg-background min-h-screen">
       <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="mb-8">
-          <h1 className="text-2xl sm:text-3xl font-bold text-primary">Leveranciers</h1>
-          <p className="text-sm text-muted-foreground mt-1">
-            {suppliers.length} geverifieerde IT-leveranciers voor transport en logistiek
-          </p>
+        <div className="flex items-start justify-between mb-8">
+          <div>
+            <h1 className="text-2xl sm:text-3xl font-bold text-primary">Leveranciers</h1>
+            <p className="text-sm text-muted-foreground mt-1">
+              {suppliers.length} geverifieerde IT-leveranciers voor transport en logistiek
+            </p>
+          </div>
+          <Link
+            href="/register"
+            className="hidden sm:inline-flex items-center gap-2 bg-accent hover:bg-accent-dark text-white font-semibold text-sm px-5 py-2.5 rounded-md transition-colors"
+          >
+            <Plus className="h-4 w-4" />
+            Nieuwe leverancier
+          </Link>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -76,6 +85,23 @@ export default function SuppliersPage() {
               </Link>
             );
           })}
+        </div>
+
+        {/* CTA for new suppliers */}
+        <div className="mt-12 bg-gradient-to-r from-primary to-primary-light rounded-xl p-8 flex flex-col sm:flex-row items-center gap-6">
+          <div className="flex-1 text-center sm:text-left">
+            <h2 className="text-xl font-bold text-white">Bent u IT-leverancier?</h2>
+            <p className="text-sm text-white/70 mt-1">
+              Bied uw producten en diensten aan via de Logistiek Appstore en bereik duizenden transportbedrijven.
+            </p>
+          </div>
+          <Link
+            href="/register"
+            className="bg-accent hover:bg-accent-dark text-white font-semibold px-6 py-3 rounded-md flex items-center gap-2 transition-colors shrink-0"
+          >
+            Registreer als leverancier
+            <ArrowRight className="h-4 w-4" />
+          </Link>
         </div>
       </div>
     </div>
