@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: #1B3054;
+    --primary-light: #2A4A7F;
+    --accent: #7AB648;
+    --accent-dark: #5A9A2F;
+    --highlight: #00A3E0;
+    --surface: #FFFFFF;
+    --background: #F5F6F8;
+    --border: #E2E5EB;
+    --text-primary: #1B3054;
+    --text-secondary: #6B7280;
+    --text-muted: #9CA3AF;
+    --danger: #DC2626;
+    --warning: #F59E0B;
+  }
+
+  body {
+    @apply bg-background text-primary font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold text-primary;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-accent hover:bg-accent-dark text-white font-semibold px-6 py-3 rounded-md transition-colors duration-200;
+  }
+
+  .btn-secondary {
+    @apply bg-white border border-primary text-primary font-semibold px-6 py-3 rounded-md hover:bg-primary hover:text-white transition-colors duration-200;
+  }
+
+  .card {
+    @apply bg-white border border-border rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200;
+  }
+
+  .category-pill {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-highlight/10 text-highlight;
+  }
+
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold;
+  }
+
+  .badge-verified {
+    @apply badge bg-accent/10 text-accent-dark;
+  }
+
+  .badge-recommended {
+    @apply badge bg-highlight/10 text-highlight;
+  }
+
+  .badge-popular {
+    @apply badge bg-warning/10 text-warning;
+  }
+
+  .badge-terugsluis {
+    @apply badge bg-primary/10 text-primary;
+  }
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "id": "review-1",
+    "listingId": "listing-transtics-tms",
+    "userId": "user-1",
+    "userName": "Jan de Vries",
+    "userOrganization": "De Vries Transport",
+    "rating": 5,
+    "title": "Eindelijk overzicht in onze planning",
+    "body": "Na jaren werken met Excel zijn we overgestapt op Transtics TMS Pro. Wat een verschil! De ritplanning is erg intuïtief en de automatische facturatie bespaart ons minstens een dag per week.",
+    "createdAt": "2026-03-20"
+  },
+  {
+    "id": "review-2",
+    "listingId": "listing-transtics-tms",
+    "userId": "user-2",
+    "userName": "Petra Bakker",
+    "userOrganization": "Bakker Logistics",
+    "rating": 4,
+    "title": "Goed systeem, leercurve",
+    "body": "Het systeem doet wat het belooft. De CBS module werkt perfect. Enige minpunt is de leercurve voor onze planners, maar de klantenservice is uitstekend.",
+    "supplierReply": "Bedankt Petra! We bieden gratis training aan voor nieuwe gebruikers. Neem contact op met ons support team.",
+    "supplierRepliedAt": "2026-03-22",
+    "createdAt": "2026-03-18"
+  },
+  {
+    "id": "review-3",
+    "listingId": "listing-fleetgo-track",
+    "userId": "user-3",
+    "userName": "Mohammed El Amrani",
+    "userOrganization": "El Amrani Transport",
+    "rating": 4,
+    "title": "Betrouwbare tracking, goede prijs",
+    "body": "We gebruiken FleetGo nu een half jaar voor 12 trucks. De tracking werkt betrouwbaar en de rijgedraganalyse heeft ons geholpen het brandstofverbruik te verlagen. Prijs-kwaliteit is uitstekend.",
+    "createdAt": "2026-04-01"
+  },
+  {
+    "id": "review-4",
+    "listingId": "listing-fleetgo-track",
+    "userId": "user-4",
+    "userName": "Klaas Mulder",
+    "userOrganization": "Mulder & Zn Vervoer",
+    "rating": 5,
+    "title": "Temperatuurmonitoring is top",
+    "body": "Als koeltransporteur is de temperatuurmonitoring voor ons essentieel. FleetGo levert betrouwbare data en de alerts werken perfect. Geen discussies meer met klanten over temperatuurafwijkingen.",
+    "createdAt": "2026-03-25"
+  },
+  {
+    "id": "review-5",
+    "listingId": "listing-digifreight-ecmr",
+    "userId": "user-5",
+    "userName": "Sandra Hendriks",
+    "userOrganization": "Hendriks Internationaal Transport",
+    "rating": 5,
+    "title": "Nooit meer papieren rompslomp",
+    "body": "De overstap naar eCMR was het beste besluit van dit jaar. Onze chauffeurs waren sceptisch maar na een week wilde niemand meer terug. De app werkt ook offline bij grensovergang, erg belangrijk voor ons.",
+    "createdAt": "2026-03-10"
+  },
+  {
+    "id": "review-6",
+    "listingId": "listing-routemaster-plan",
+    "userId": "user-1",
+    "userName": "Jan de Vries",
+    "userOrganization": "De Vries Transport",
+    "rating": 5,
+    "title": "15% besparing is echt waar",
+    "body": "Ik was sceptisch over de beloofde 15% brandstofbesparing maar na 3 maanden meten klopt het. De AI leert echt van onze ritten en de planning wordt steeds beter. Geweldige investering.",
+    "createdAt": "2026-04-05"
+  },
+  {
+    "id": "review-7",
+    "listingId": "listing-securetrans-audit",
+    "userId": "user-6",
+    "userName": "Henk Visser",
+    "userOrganization": "Visser Koeriersdiensten",
+    "rating": 4,
+    "title": "Oogopener voor ons bedrijf",
+    "body": "We dachten dat we redelijk beveiligd waren maar de scan bracht toch 3 kritieke kwetsbaarheden aan het licht. Het verbeterplan is helder en praktisch. Aanrader voor elk transportbedrijf.",
+    "createdAt": "2026-03-30"
+  },
+  {
+    "id": "review-8",
+    "listingId": "listing-logicost-boek",
+    "userId": "user-7",
+    "userName": "Annemarie Jansen",
+    "userOrganization": "Jansen Transport BV",
+    "rating": 4,
+    "title": "CBS module scheelt veel werk",
+    "body": "De CBS module is voor ons de reden geweest om over te stappen. Voorheen waren we daar uren mee bezig, nu gaat het automatisch. De kostprijsberekening per rit geeft ons ook veel beter inzicht.",
+    "createdAt": "2026-02-28"
+  }
+]
