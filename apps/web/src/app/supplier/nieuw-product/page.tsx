@@ -322,7 +322,7 @@ export default function NieuwProductPage() {
           </Link>
           <h1 className="text-2xl font-bold text-primary">Nieuw product toevoegen</h1>
           <p className="text-sm text-muted-foreground mt-1">
-            Vul alle stappen in om uw product in de Logistiek Appstore te plaatsen.
+            Vul alle stappen in om uw product in de Logistiek Digistore te plaatsen.
           </p>
         </div>
 

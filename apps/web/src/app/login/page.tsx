@@ -50,7 +50,7 @@ export default function LoginPage() {
       <div className="max-w-4xl w-full">
         <div className="text-center mb-10">
           <h1 className="text-2xl sm:text-3xl font-bold text-primary">
-            Inloggen op de Logistiek Appstore
+            Inloggen op de Logistiek Digistore
           </h1>
           <p className="text-muted-foreground mt-2">
             Kies uw rol om in te loggen met een demo-account

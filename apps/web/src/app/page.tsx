@@ -147,7 +147,7 @@ export default function HomePage() {
             Bent u IT-leverancier?
           </h2>
           <p className="mt-3 text-white/70 max-w-xl mx-auto">
-            Bied uw producten en diensten aan via de Logistiek Appstore en bereik
+            Bied uw producten en diensten aan via de Logistiek Digistore en bereik
             duizenden transportbedrijven die klaar zijn om te investeren in digitalisering.
           </p>
           <Link

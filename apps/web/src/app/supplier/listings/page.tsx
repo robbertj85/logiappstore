@@ -48,7 +48,7 @@ export default function SupplierListingsPage() {
           <div>
             <h1 className="text-2xl font-bold text-primary">Uw listings</h1>
             <p className="text-sm text-muted-foreground mt-1">
-              Beheer uw productlistings op de Logistiek Appstore
+              Beheer uw productlistings op de Logistiek Digistore
             </p>
           </div>
           <Link href="/supplier/nieuw-product" className="btn-primary flex items-center gap-2 text-sm">

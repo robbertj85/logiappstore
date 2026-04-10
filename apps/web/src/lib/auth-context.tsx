@@ -3,7 +3,20 @@
 import { createContext, useContext, useState, useEffect, type ReactNode } from "react";
 import type { Vehicle } from "@logiappstore/shared";
 
-export type AuthRole = "CONSUMER" | "SUPPLIER";
+export type AuthRole = "CONSUMER" | "SUPPLIER" | "SUPPLIER_NEW" | "ADMIN";
+export type OnboardingStatus = "NOT_STARTED" | "IN_PROGRESS" | "PENDING_REVIEW" | "APPROVED" | "REJECTED";
+
+export interface SupplierProfile {
+  contactName: string;
+  contactEmail: string;
+  contactPhone: string;
+  website: string;
+  description: string;
+  categoryIds: string[];
+  logo: string;
+  kvkUittreksel: boolean;
+  onboardingStep: number; // 0-3
+}
 
 export interface FakeUser {
   name: string;
@@ -13,9 +26,11 @@ export interface FakeUser {
   kvkNumber: string;
   niwoNumber?: string;
   vehicles: Vehicle[];
+  onboardingStatus?: OnboardingStatus;
+  supplierProfile?: SupplierProfile;
 }
 
-const DEMO_USERS: Record<AuthRole, FakeUser> = {
+const DEMO_USERS: Record<string, FakeUser> = {
   CONSUMER: {
     name: "Jan de Vries",
     email: "jan@devriesbv.nl",
@@ -65,6 +80,35 @@ const DEMO_USERS: Record<AuthRole, FakeUser> = {
     role: "SUPPLIER",
     organization: "Transtics",
     kvkNumber: "12345678",
+    vehicles: [],
+    onboardingStatus: "APPROVED",
+    supplierProfile: {
+      contactName: "Lisa van Dijk",
+      contactEmail: "lisa@transtics.nl",
+      contactPhone: "+31 20 123 4567",
+      website: "https://transtics.nl",
+      description: "Transtics levert innovatieve TMS- en fleet management oplossingen voor de Nederlandse transport- en logistiek sector.",
+      categoryIds: ["cat-tms", "cat-fleet"],
+      logo: "",
+      kvkUittreksel: true,
+      onboardingStep: 3,
+    },
+  },
+  SUPPLIER_NEW: {
+    name: "Mark Jansen",
+    email: "mark@logisoftware.nl",
+    role: "SUPPLIER",
+    organization: "LogiSoftware BV",
+    kvkNumber: "",
+    vehicles: [],
+    onboardingStatus: "NOT_STARTED",
+  },
+  ADMIN: {
+    name: "Sophie van der Berg",
+    email: "sophie@connekt.nl",
+    role: "ADMIN",
+    organization: "Connekt / Logistiek Digitaal",
+    kvkNumber: "41150084",
     vehicles: [],
   },
 };

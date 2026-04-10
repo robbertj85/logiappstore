@@ -3,7 +3,7 @@ import { CategoryCard } from "@/components/categories/category-card";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Categorieën — Logistiek Appstore",
+  title: "Categorieën — Logistiek Digistore",
   description: "Blader door IT-oplossingen per categorie op basis van het Mijn Digitale Landschap (TLN) framework.",
 };
 

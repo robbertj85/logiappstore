@@ -61,7 +61,7 @@ export default function SupplierAnalyticsPage() {
           <div>
             <h1 className="text-2xl font-bold text-primary">Analytics</h1>
             <p className="text-sm text-muted-foreground mt-1">
-              Prestaties van uw producten op de Logistiek Appstore
+              Prestaties van uw producten op de Logistiek Digistore
             </p>
           </div>
           <div className="flex items-center gap-2 text-sm text-muted-foreground bg-white border border-border rounded-md px-3 py-2">

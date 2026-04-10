@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const category = getCategoryBySlug(slug);
   if (!category) return { title: "Categorie niet gevonden" };
   return {
-    title: `${category.name} — Logistiek Appstore`,
+    title: `${category.name} — Logistiek Digistore`,
     description: category.description ?? `IT-oplossingen in de categorie ${category.name}`,
   };
 }

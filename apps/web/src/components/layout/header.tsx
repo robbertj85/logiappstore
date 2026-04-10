@@ -29,7 +29,7 @@ export function Header() {
             <div className="flex flex-col">
               <span className="text-lg font-bold leading-tight">Logistiek</span>
               <span className="text-xs text-accent font-semibold leading-tight -mt-0.5">
-                Appstore
+                Digistore
               </span>
             </div>
           </Link>

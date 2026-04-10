@@ -6,8 +6,8 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Over het platform — Logistiek Appstore",
-  description: "De Logistiek Appstore is een initiatief van Connekt, TLN, VERN en evofenedex voor digitalisering van de transportsector.",
+  title: "Over het platform — Logistiek Digistore",
+  description: "De Logistiek Digistore is een initiatief van Connekt, TLN, VERN en evofenedex voor digitalisering van de transportsector.",
 };
 
 export default function AboutPage() {
@@ -18,7 +18,7 @@ export default function AboutPage() {
         <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="max-w-2xl">
             <h1 className="text-3xl sm:text-4xl font-extrabold">
-              Over de Logistiek Appstore
+              Over de Logistiek Digistore
             </h1>
             <p className="mt-4 text-lg text-white/70 leading-relaxed">
               Het centrale platform waar transportbedrijven digitale oplossingen
@@ -31,10 +31,10 @@ export default function AboutPage() {
       <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
         {/* What is it */}
         <section>
-          <h2 className="text-2xl font-bold text-primary mb-4">Wat is de Logistiek Appstore?</h2>
+          <h2 className="text-2xl font-bold text-primary mb-4">Wat is de Logistiek Digistore?</h2>
           <div className="prose max-w-none text-muted-foreground">
             <p>
-              De Logistiek Appstore is een online marktplaats waar IT-leveranciers hun
+              De Logistiek Digistore is een online marktplaats waar IT-leveranciers hun
               producten en diensten aanbieden aan kleine en middelgrote transportbedrijven
               in Nederland. Het platform is ontwikkeld om de digitale transformatie in de
               transportsector te versnellen.
@@ -63,7 +63,7 @@ export default function AboutPage() {
                 kunnen besteden aan digitalisering, verduurzaming en innovatie.
               </p>
               <p className="text-sm text-muted-foreground mt-3">
-                Via de Logistiek Appstore kunt u dit budget besteden aan goedgekeurde
+                Via de Logistiek Digistore kunt u dit budget besteden aan goedgekeurde
                 IT-oplossingen. Producten met het label{" "}
                 <span className="inline-flex items-center gap-1 bg-primary/10 text-primary px-2 py-0.5 rounded-full text-xs font-semibold">
                   <ShieldCheck className="h-3 w-3" />
@@ -79,7 +79,7 @@ export default function AboutPage() {
         <section>
           <h2 className="text-2xl font-bold text-primary mb-6">Beheer & governance</h2>
           <p className="text-muted-foreground mb-6">
-            De Logistiek Appstore wordt gezamenlijk beheerd door vier organisaties
+            De Logistiek Digistore wordt gezamenlijk beheerd door vier organisaties
             die de belangen van de transportsector vertegenwoordigen:
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -125,7 +125,7 @@ export default function AboutPage() {
             <div>
               <h2 className="text-xl font-bold text-primary">Mijn Digitale Landschap</h2>
               <p className="text-sm text-muted-foreground mt-1">
-                Alle producten in de Logistiek Appstore zijn gecategoriseerd volgens
+                Alle producten in de Logistiek Digistore zijn gecategoriseerd volgens
                 het <strong>Mijn Digitale Landschap</strong> framework van TLN. Dit
                 framework beschrijft het complete IT-landschap van een transportbedrijf
                 — van TMS en fleet management tot boekhouding en cybersecurity.
@@ -177,7 +177,7 @@ export default function AboutPage() {
           <h2 className="text-2xl font-bold text-primary mb-4">Privacy & voorwaarden</h2>
           <div className="prose max-w-none text-muted-foreground text-sm space-y-3">
             <p>
-              De Logistiek Appstore verwerkt persoonsgegevens conform de Algemene
+              De Logistiek Digistore verwerkt persoonsgegevens conform de Algemene
               Verordening Gegevensbescherming (AVG). Wij verzamelen alleen gegevens
               die noodzakelijk zijn voor het functioneren van het platform.
             </p>
@@ -186,7 +186,7 @@ export default function AboutPage() {
               <span className="text-highlight">privacy@logistiekappstore.nl</span>.
             </p>
             <p>
-              Door gebruik te maken van de Logistiek Appstore gaat u akkoord met onze
+              Door gebruik te maken van de Logistiek Digistore gaat u akkoord met onze
               algemene voorwaarden en ons privacybeleid.
             </p>
           </div>

@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const listing = getListingBySlug(slug);
   if (!listing) return { title: "Product niet gevonden" };
   return {
-    title: `${listing.title} — Logistiek Appstore`,
+    title: `${listing.title} — Logistiek Digistore`,
     description: listing.shortDescription,
   };
 }

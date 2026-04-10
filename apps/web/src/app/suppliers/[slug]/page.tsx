@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const supplier = getSupplierBySlug(slug);
   if (!supplier) return { title: "Leverancier niet gevonden" };
   return {
-    title: `${supplier.name} — Logistiek Appstore`,
+    title: `${supplier.name} — Logistiek Digistore`,
     description: supplier.description ?? `IT-leverancier ${supplier.name}`,
   };
 }

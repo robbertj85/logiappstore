@@ -4,7 +4,7 @@ import { getSuppliers, getSupplierListings } from "@/lib/data";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Leveranciers — Logistiek Appstore",
+  title: "Leveranciers — Logistiek Digistore",
   description: "Ontdek geverifieerde IT-leveranciers voor de transport en logistiek sector.",
 };
 
@@ -92,7 +92,7 @@ export default function SuppliersPage() {
           <div className="flex-1 text-center sm:text-left">
             <h2 className="text-xl font-bold text-white">Bent u IT-leverancier?</h2>
             <p className="text-sm text-white/70 mt-1">
-              Bied uw producten en diensten aan via de Logistiek Appstore en bereik duizenden transportbedrijven.
+              Bied uw producten en diensten aan via de Logistiek Digistore en bereik duizenden transportbedrijven.
             </p>
           </div>
           <Link

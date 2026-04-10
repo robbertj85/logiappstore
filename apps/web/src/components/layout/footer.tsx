@@ -11,7 +11,7 @@ export function Footer() {
             <div className="flex items-center gap-2 mb-4">
               <ShoppingBag className="h-6 w-6 text-accent" />
               <div>
-                <span className="text-lg font-bold">Logistiek Appstore</span>
+                <span className="text-lg font-bold">Logistiek Digistore</span>
               </div>
             </div>
             <p className="text-sm text-white/60 leading-relaxed">
@@ -83,7 +83,7 @@ export function Footer() {
 
         <div className="mt-10 pt-6 border-t border-white/10 text-center">
           <p className="text-xs text-white/40">
-            &copy; {new Date().getFullYear()} Logistiek Appstore — Een initiatief van Connekt, TLN, VERN en evofenedex
+            &copy; {new Date().getFullYear()} Logistiek Digistore — Een initiatief van Connekt, TLN, VERN en evofenedex
           </p>
         </div>
       </div>

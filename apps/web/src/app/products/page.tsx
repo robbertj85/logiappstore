@@ -4,7 +4,7 @@ import { Search } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Alle producten — Logistiek Appstore",
+  title: "Alle producten — Logistiek Digistore",
   description: "Ontdek IT-oplossingen voor uw transportbedrijf. Filter op categorie, prijs en beoordeling.",
 };
 
